@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 10px;
+  font-weight: bold;
   font-family: 'Open Sans',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -9,4 +10,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+* {
+  box-sizing: border-box;
 }
