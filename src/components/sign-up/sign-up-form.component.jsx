@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import FormInput from "../form-input/form-input.component";
 
-import "./sign-up-from.styles.scss";
+import { SignUnContainer } from "./sign-up-from.styles.jsx";
 import Button from "../button/button.component";
 
 import {
@@ -57,7 +57,7 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
+    <SignUnContainer>
       <h2>Don't have an account?</h2>
       <span>Sign up with email and password</span>
       <form onSubmit={handleSubmit}>
@@ -98,7 +98,7 @@ const SignUpForm = () => {
         />
         <Button type="submit">Sign Up</Button>
       </form>
-    </div>
+    </SignUnContainer>
   );
 };
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import FormInput from "../form-input/form-input.component";
 
-import "./sign-in-form.styles.scss";
+import { SignInContainer, ButtonsContainer } from "./sign-in-form.styles.jsx";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 
 import {
@@ -58,7 +58,7 @@ const SignInForm = () => {
   };
 
   return (
-    <div className="sign-in-container">
+    <SignInContainer>
       <h2>Already have an account?</h2>
       <span>Sign in with email and password</span>
       <form onSubmit={handleSubmit}>
@@ -80,7 +80,7 @@ const SignInForm = () => {
           value={password}
         />
 
-        <div className="buttons-container">
+        <ButtonsContainer>
           <Button type="submit">Sign In</Button>
           <Button
             buttonType={BUTTON_TYPE_CLASSES.google}
@@ -88,9 +88,9 @@ const SignInForm = () => {
           >
             Google Sign In
           </Button>
-        </div>
+        </ButtonsContainer>
       </form>
-    </div>
+    </SignInContainer>
   );
 };
 
