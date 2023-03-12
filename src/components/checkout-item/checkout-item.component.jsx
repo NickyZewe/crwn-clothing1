@@ -30,7 +30,6 @@ const CheckoutItem = ({ cartItem }) => {
   const addItemHandler = () => dispatch(addItemToCart(cartItems, cartItem));
   const removeItemHandler = () =>
     dispatch(removeItemFromCart(cartItems, cartItem));
-  console.log(addItemToCart);
 
   return (
     <CheckoutItemContainer>
